@@ -64,6 +64,7 @@ namespace CommandService.EventProcessing
                       {
                           repo.CreatePlatform(plat);
                           repo.SaveChanges();
+                          Console.WriteLine($"--> Platform with ID {plat.ExternalId} added.");
                       }
                       else
                       {
